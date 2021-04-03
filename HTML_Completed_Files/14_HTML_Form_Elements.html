@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Elements</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        div{
+            background-color: lightsalmon;
+            font-family: "Comic Sans MS", sans-serif;
+            padding: 5px;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--
+        simple Login Form
+        Login Form with Table
+        Select Box
+        Text Area
+        DataList
+    -->
+
+    <div>
+    <form>
+        <div>
+            <label for="name">Name</label>
+            <!-- id and for should be same, we are linking them both-->
+            <input type="text", value="user" id="name" placeholder="username" required>
+        </div>
+        <br>
+
+        <div>
+            <form action="">
+                <label for="technologies"> Select a language</label>
+                <input list="technologies" name="tech">
+                <datalist id="technologies">
+                    <option value="HTML"></option>
+                    <option value="CSS"></option>
+                    <option value="JavaScript"></option>
+                    <option value="Bootstrap"></option>
+                    <option value="Angular JS"></option>
+                    <option value="React JS"></option>
+                </datalist>
+                <input type="submit" value="submit">
+            </form>
+
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="email" name="email" required>
+        </div>
+        <br>
+        <div>
+            <label>Age</label>
+            <input type="number" name="age" min="1", max="200" required>
+        </div>
+        <br>
+        <div>
+            <label>Birth date</label>
+            <input type="date" name="date" required>
+        </div>
+        <br>
+        Favourite food
+        <div>
+            <label>Banana</label>
+            <input type="checkbox">
+            <lable>Apple</lable>
+            <input type="checkbox">
+        </div>
+        <br>
+        Gender
+        <div>
+            <label>Male</label>
+            <input type="radio" name="gender"> <br>
+            <label>Female</label>
+            <input type="radio" name="gender">
+        </div>
+        <br>
+
+        <div>
+            <label>Eye clour</label>
+            <select name="eye colour" id="eye">
+                <option  value="Green">Green</option>
+                <option  value="red">Red</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <label for="bio">Bio</label>
+            <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+
+        <div>
+            <label>Upload resume</label>
+            <input type="file">
+        </div>
+        <br>
+
+        <div>
+            <label for="phone">Phone number</label>
+            <input type="tel">
+        </div>
+        <br>
+
+        <div>
+            <label for="url">Enter your website</label>
+            <input type="url">
+        </div>
+        <br>
+
+        <div>
+            <lable>Password</lable>
+            <input type="password", placeholder="password" required>
+        </div>
+        <br>
+        <button type="reset" value="reset">Reset</button>
+        <button type="submit" value="submit">Submit</button>
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML Table TAG</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin-bottom: 500px;
+      }
+      #beautiful {
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 0 10px black;
+      }
+      #beautiful thead {
+        background-color: saddlebrown;
+        color: white;
+      }
+      #beautiful tbody {
+        background-color: lightsalmon;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Sample table</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>SNo</th>
+          <th>Name</th>
+          <th>Company</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>John</td>
+          <td>Infosys</td>
+          <td>Hyderabad</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>David</td>
+          <td>Wipro</td>
+          <td>Banglore</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>sam</td>
+          <td>IBM</td>
+          <td>Chennai</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Table with colspane</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>SNo</th>
+          <th>Name</th>
+          <th colspan="2">Company & Address</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>John</td>
+          <td>Infosys</td>
+          <td>Hyderabad</td>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>John</td>
+          <td>Infosys</td>
+          <td>Hyderabad</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>David</td>
+          <td>Wipro</td>
+          <td>Banglore</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>sam</td>
+          <td>IBM</td>
+          <td>Chennai</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Table with rowspane</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>SNo</th>
+          <th>Name</th>
+          <th>Company</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="3">1</td>
+          <td>John</td>
+          <td>Infosys</td>
+          <td>Hyderabad</td>
+        </tr>
+
+        <tr>
+          <td>Butcher</td>
+          <td>Infosys</td>
+          <td>Hyderabad</td>
+        </tr>
+
+        <tr>
+          <td>David</td>
+          <td>Wipro</td>
+          <td>Banglore</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>sam</td>
+          <td>IBM</td>
+          <td>Chennai</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Custom table</h2>
+    <table id="beautiful">
+      <thead>
+        <tr>
+          <th>SNo</th>
+          <th>Name</th>
+          <th>Company</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>John</td>
+          <td>Infosys</td>
+          <td>Hyderabad</td>
+        </tr>
+      </tbody>
+
+      <tbody>
+        <tr>
+          <td>2</td>
+          <td>David</td>
+          <td>Wipro</td>
+          <td>Banglore</td>
+        </tr>
+      </tbody>
+
+      <tbody>
+        <tr>
+          <td>3</td>
+          <td>sam</td>
+          <td>IBM</td>
+          <td>Chennai</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

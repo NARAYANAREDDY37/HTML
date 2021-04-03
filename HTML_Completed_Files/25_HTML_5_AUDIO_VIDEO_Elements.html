@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Audio & Video</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        div{
+            background: linear-gradient(lightgreen,lightcoral,lightgreen);
+            padding: 15px;
+            box-shadow: 0px 5px 5px black;
+            width: 500px;
+            border-radius: 10px;
+            text-align: center;
+
+        }
+        div audio{
+            width: 100%;
+            outline: none;
+        }
+        div video{
+            width: 100%;
+            outline: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Audio , Video Elements -->
+
+
+    <h2>Audio file</h2>
+        <div>
+            <audio controls>
+                <source src="media/message.MP3" type="audio/mp3">
+            </audio>
+        </div>
+
+
+    <h2>Video file</h2>
+        <div>
+            <video controls >
+                <source src="media/video.mp4" type="video/mp4">
+            </video>
+        </div>
+</body>
+</html>
